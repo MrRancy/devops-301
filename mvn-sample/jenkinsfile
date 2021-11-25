@@ -1,4 +1,8 @@
 node {
+    
+    stage('Validation') {
+        sh 'echo "Hello World!"'
+    }
     stage('Git Checkout to Main') {
         git branch: 'master', url: 'https://github.com/MrRancy/devops-301.git'
     }
