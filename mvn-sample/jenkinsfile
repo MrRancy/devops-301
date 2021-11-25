@@ -1,0 +1,22 @@
+node {
+    stage('Git Checkout to Main') {
+        git branch: 'master', url: 'https://github.com/MrRancy/devops-301.git'
+    }
+    dir('mvn-sample/') {
+        stage('Maven Clean') {
+            sh 'mvn clean'
+        }
+        stage('Maven Compile') {
+            sh 'mvn compile'
+        }
+        stage('Maven Test') {
+            sh 'mvn test'
+        }
+        stage('Maven Package') {
+            sh 'mvn package'  
+        }
+        stage('Archive Artifacts'){
+            archiveArtifacts artifacts: 'target/petclinic.war', followSymlinks: false
+        }
+    }
+}
