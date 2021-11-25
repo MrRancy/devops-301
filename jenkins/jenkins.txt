@@ -714,3 +714,5 @@ webroot: $user.home/.jenkins
 2021-11-25 07:03:47.549+0000 [id=43]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Download metadata. 2 ms
 2021-11-25 07:03:47.650+0000 [id=26]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
 2021-11-25 07:03:47.686+0000 [id=20]	INFO	hudson.WebAppMain$3#run: Jenkins is fully up and running
+2021-11-25 07:17:06.916+0000 [id=61]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Periodic background build discarder
+2021-11-25 07:17:06.919+0000 [id=61]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 2 ms
