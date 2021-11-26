@@ -5,7 +5,7 @@ node {
     }
 
     def server = Artifactory.server "Jfrog-1"
-    def buildinfo = Artifactory.newBuildInfo()
+    def buildInfo = Artifactory.newBuildInfo()
 
     // Project Path
     def project_path = "mvn-sample/"
@@ -37,7 +37,9 @@ node {
 		server.upload spec: uploadSpec
 	}
 	stage('Publish Build Info'){
-   		server.publishBuildInfo buildInfo
+		server.download spec: downloadSpec, buildInfo: buildInfo
+		server.upload spec: uploadSpec, buildInfo: buildInfo
+		server.publishBuildInfo buildInfo
 	}
 	stage('Archive Artifact') {
 		archiveArtifacts artifacts: 'target/petclinic.war', followSymlinks: false

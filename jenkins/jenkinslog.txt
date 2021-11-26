@@ -107,3 +107,9 @@ webroot: $user.home/.jenkins
 2021-11-26 10:06:10.568+0000 [id=1790]	INFO	o.j.p.workflow.job.WorkflowRun#finish: mvn-sample-pipeline-as-code #7 completed: FAILURE
 2021-11-26 10:20:00.385+0000 [id=1458]	INFO	h.triggers.SCMTrigger$Runner#run: SCM changes detected in mvn-sample-pipeline-as-code. Triggering  #8
 2021-11-26 10:20:53.572+0000 [id=1939]	INFO	o.j.p.workflow.job.WorkflowRun#finish: mvn-sample-pipeline-as-code #8 completed: FAILURE
+2021-11-26 10:26:34.547+0000 [id=2031]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Periodic background build discarder
+2021-11-26 10:26:34.548+0000 [id=2031]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 1 ms
+2021-11-26 10:27:31.866+0000 [id=2125]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: [consumer_0] Deploying artifact: http://localhost:8082/artifactory/petclinic-repo/petclinic.war
+2021-11-26 10:27:33.742+0000 [id=2130]	INFO	o.j.p.workflow.job.WorkflowRun#finish: mvn-sample-pipeline-as-code #9 completed: FAILURE
+2021-11-26 11:26:34.547+0000 [id=2331]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Periodic background build discarder
+2021-11-26 11:26:34.548+0000 [id=2331]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 1 ms
