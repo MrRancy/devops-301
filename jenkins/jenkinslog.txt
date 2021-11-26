@@ -134,3 +134,5 @@ webroot: $user.home/.jenkins
 2021-11-26 12:08:21.735+0000 [id=2656]	INFO	o.j.p.workflow.job.WorkflowRun#finish: mvn-sample-pipeline-as-code #11 completed: FAILURE
 2021-11-26 12:10:21.356+0000 [id=2764]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: [consumer_0] Deploying artifact: http://localhost:8082/artifactory/petclinic-repo/petclinic.war
 2021-11-26 12:10:22.631+0000 [id=2769]	INFO	o.j.p.workflow.job.WorkflowRun#finish: mvn-sample-pipeline-as-code #12 completed: FAILURE
+2021-11-26 12:19:26.638+0000 [id=2886]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: [consumer_0] Deploying artifact: http://localhost:8082/artifactory/petclinic-repo/petclinic.war
+2021-11-26 12:19:27.898+0000 [id=2891]	INFO	o.j.p.workflow.job.WorkflowRun#finish: mvn-sample-pipeline-as-code #13 completed: FAILURE
