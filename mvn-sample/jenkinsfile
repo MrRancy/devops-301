@@ -19,12 +19,6 @@ node {
         stage('Maven Package') {
             sh 'mvn package'  
         }
-        stage('Archive Artifacts'){
-            archiveArtifacts artifacts: 'target/petclinic.war', followSymlinks: false
-        }
-	stage('Docker-Compose Build'){
-            sh 'docker-compose up -d'
-        } 
 	stage('Build Management') {
 		def uploadSpec = """{ 
 			"files": [
@@ -43,7 +37,7 @@ node {
 		archiveArtifacts artifacts: 'target/petclinic.war', followSymlinks: false
 	}
 	stage('Docker Deployment') {
-		sh 'docker-compose up -d --build'
+		sh 'docker-compose up -d'
 	}
    }
 }
