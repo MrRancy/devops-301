@@ -3,6 +3,12 @@ node {
     stage('Validation') {
         sh 'echo "Hello World!"'
     }
+
+    def server = Artifactory.server "Jfrog-1"
+    def buildinfo = Artifactory.newBuildInfo()
+
+    // Project Path
+    def project_path = "mvn-sample/"
     stage('Git Checkout to Main') {
         git branch: 'jenkins', url: 'https://github.com/MrRancy/devops-301.git'
     }

@@ -105,3 +105,5 @@ webroot: $user.home/.jenkins
 }
 2021-11-26 10:05:00.342+0000 [id=1494]	INFO	h.triggers.SCMTrigger$Runner#run: SCM changes detected in mvn-sample-pipeline-as-code. Triggering  #7
 2021-11-26 10:06:10.568+0000 [id=1790]	INFO	o.j.p.workflow.job.WorkflowRun#finish: mvn-sample-pipeline-as-code #7 completed: FAILURE
+2021-11-26 10:20:00.385+0000 [id=1458]	INFO	h.triggers.SCMTrigger$Runner#run: SCM changes detected in mvn-sample-pipeline-as-code. Triggering  #8
+2021-11-26 10:20:53.572+0000 [id=1939]	INFO	o.j.p.workflow.job.WorkflowRun#finish: mvn-sample-pipeline-as-code #8 completed: FAILURE
