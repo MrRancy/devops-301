@@ -32,3 +32,8 @@ webroot: $user.home/.jenkins
 2021-11-26 04:26:34.548+0000 [id=307]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 1 ms
 2021-11-26 05:26:34.547+0000 [id=507]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Periodic background build discarder
 2021-11-26 05:26:34.548+0000 [id=507]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 1 ms
+2021-11-26 06:09:50.040+0000 [id=14]	WARNING	hudson.security.csrf.CrumbFilter#doFilter: Found invalid crumb 30fa9e07fbf493aea228a127c9f480d4136594408995c12c17cc09a0d9308c61. If you are calling this URL with a script, please use the API Token instead. More information: https://www.jenkins.io/redirect/crumb-cannot-be-used-for-script
+2021-11-26 06:09:50.041+0000 [id=14]	WARNING	hudson.security.csrf.CrumbFilter#doFilter: No valid crumb was included in request for /ajaxBuildQueue by admin. Returning 403.
+2021-11-26 06:09:50.047+0000 [id=15]	WARNING	hudson.security.csrf.CrumbFilter#doFilter: Found invalid crumb 30fa9e07fbf493aea228a127c9f480d4136594408995c12c17cc09a0d9308c61. If you are calling this URL with a script, please use the API Token instead. More information: https://www.jenkins.io/redirect/crumb-cannot-be-used-for-script
+2021-11-26 06:09:50.047+0000 [id=15]	WARNING	hudson.security.csrf.CrumbFilter#doFilter: No valid crumb was included in request for /ajaxExecutors by admin. Returning 403.
+2021-11-26 06:11:52.875+0000 [id=750]	INFO	o.j.p.workflow.job.WorkflowRun#finish: mvn-sample-pipeline-as-code #4 completed: SUCCESS

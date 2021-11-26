@@ -22,5 +22,9 @@ node {
         stage('Archive Artifacts'){
             archiveArtifacts artifacts: 'target/petclinic.war', followSymlinks: false
         }
-    }
+	stage('Docker-Compose Build'){
+            sh 'docker-compose up -d'
+        } 
+
+   }
 }
