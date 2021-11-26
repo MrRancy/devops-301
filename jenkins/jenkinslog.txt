@@ -132,3 +132,5 @@ webroot: $user.home/.jenkins
 2021-11-26 12:03:50.561+0000 [id=2544]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
 2021-11-26 12:03:50.562+0000 [id=2541]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: sonar
 2021-11-26 12:08:21.735+0000 [id=2656]	INFO	o.j.p.workflow.job.WorkflowRun#finish: mvn-sample-pipeline-as-code #11 completed: FAILURE
+2021-11-26 12:10:21.356+0000 [id=2764]	INFO	o.j.h.util.JenkinsBuildInfoLog#info: [consumer_0] Deploying artifact: http://localhost:8082/artifactory/petclinic-repo/petclinic.war
+2021-11-26 12:10:22.631+0000 [id=2769]	INFO	o.j.p.workflow.job.WorkflowRun#finish: mvn-sample-pipeline-as-code #12 completed: FAILURE

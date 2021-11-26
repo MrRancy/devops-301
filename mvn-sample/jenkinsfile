@@ -34,9 +34,9 @@ node {
 		server.upload spec: uploadSpec
 	}
 	stage('Publish Build Info'){
-		def buildInfo = Artifactory.newBuildInfo()
-		server.download spec: downloadSpec, buildInfo: buildInfo
-		server.upload spec: uploadSpec, buildInfo: buildInfo
+		def buildInfo = server.download downloadSpec
+		def buildInfo2 = server.upload uploadSpec
+		buildInfo.append buildInfo2
 		server.publishBuildInfo buildInfo
 	}
 	stage('Archive Artifact') {
