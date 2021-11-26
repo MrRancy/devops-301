@@ -1,0 +1,30 @@
+path.data: ${JF_PRODUCT_HOME}/var/data/filebeat
+filebeat.inputs:
+  - type: log
+    enabled: ${METRICS_LOG_ENABLED:false}
+    paths:
+      - ${JF_PRODUCT_HOME}/var/log/distribution-request.log
+    processors:
+      - dissect:
+          tokenizer: "%{timestamp}|%{req_trace_id}|%{req_remote_address}|%{req_user}|%{req_type}|%{req_url}|%{res_status}|%{res_content_length}|%{req_content_length}|%{res_duration}|%{req_user_agent}"
+          target_prefix: ""
+    fields:
+      service_id: "${JFDS_SERVICE_ID}"
+      node_id: "${NODE_ID}"
+      record_type: "jfds"
+    fields_under_root: true
+setup.template.enabled: false
+setup.ilm.enabled: false
+output.elasticsearch:
+  hosts: ["${ELASTICSEARCH_URL}"]
+  username: "${ELASTICSEARCH_USERNAME}"
+  password: "${ELASTICSEARCH_PASSWORD}"
+  indices:
+    - index: "active_request_data_%{+yyyy.MM.dd}"
+logging.level: ${FILEBEAT_LOG_LEVEL:debug}
+logging.to_files: ${FILEBEAT_LOG_TOFILES:false}
+logging.files:
+  path: ${FILEBEAT_LOG_PATH:${JF_PRODUCT_HOME}/var/log}
+  name: filebeat.log
+  keepfiles: ${FILEBEAT_LOG_KEEPFILES:2}
+  permissions: 0644

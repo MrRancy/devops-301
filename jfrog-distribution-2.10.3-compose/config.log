@@ -1,0 +1,700 @@
+
+[1mBeginning JFrog Distribution setup[0m
+
+
+[DEBUG] Method docker_doValidations Caller:4945 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+Validating System requirements
+
+[38;5;197m[ERROR[0m[38;5;197m] [0mThis script must be run as root or with sudo
+
+[1mBeginning JFrog Distribution setup[0m
+
+
+[DEBUG] Method docker_doValidations Caller:4945 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+Validating System requirements
+Docker version 17.03.3-ce, build e19b718
+docker-compose version 1.27.4, build 40524192
+
+[1;31m[WARN[0m[1;31m] [0mRunning with 2 CPU Cores. Recommended value: 3 Cores
+
+[DEBUG] All validations successful
+
+[DEBUG] Method docker_hook_preUserInputs
+
+[DEBUG] Method docker_getUserInputs Caller:4955 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_getUserInputs Caller:4853 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_createInstallerYaml Caller:3627 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Creating file: [/home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml]
+
+[DEBUG] Method wrapper_setSystemValue Caller:2764 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Setting installer.node.ip with 10.0.0.4 in /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml
+
+[DEBUG] Method wrapper_setSystemValue Caller:2765 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Setting installer.ha with n in /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml
+
+[DEBUG] Method wrapper_setSystemValue Caller:2766 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Setting installer.install_postgresql with y in /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml
+
+[DEBUG] Method wrapper_hook_setInstallerDefaults Caller:2771 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_setSystemValue Caller:4791 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Setting installer.data_dir with /home/labuser/.jfrog/distribution in /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml
+
+[DEBUG] Method docker_hook_setInstallerDefaults
+
+[DEBUG] Method wrapper_hook_start_getUserInputs Caller:3630 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_askUser Caller:4801 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+Installation Directory (Default: /home/labuser/.jfrog/distribution): 
+[1mBeginning JFrog Distribution setup[0m
+
+
+[DEBUG] Method docker_doValidations Caller:4945 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+Validating System requirements
+Docker version 17.03.3-ce, build e19b718
+docker-compose version 1.27.4, build 40524192
+
+[1;31m[WARN[0m[1;31m] [0mRunning with 2 CPU Cores. Recommended value: 3 Cores
+
+[DEBUG] All validations successful
+
+[DEBUG] Method docker_hook_preUserInputs
+
+[DEBUG] Method docker_getUserInputs Caller:4955 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_getUserInputs Caller:4853 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_createInstallerYaml Caller:3627 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_setSystemValue Caller:2764 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_setSystemValue Caller:2765 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_setSystemValue Caller:2766 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_hook_setInstallerDefaults Caller:2771 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_setSystemValue Caller:4791 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_hook_setInstallerDefaults
+
+[DEBUG] Method wrapper_hook_start_getUserInputs Caller:3630 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_askUser Caller:4801 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+Installation Directory (Default: /home/labuser/.jfrog/distribution): 
+[1mBeginning JFrog Distribution setup[0m
+
+
+[DEBUG] Method docker_doValidations Caller:4945 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+Validating System requirements
+Docker version 17.03.3-ce, build e19b718
+docker-compose version 1.27.4, build 40524192
+
+[1;31m[WARN[0m[1;31m] [0mRunning with 2 CPU Cores. Recommended value: 3 Cores
+
+[DEBUG] All validations successful
+
+[DEBUG] Method docker_hook_preUserInputs
+
+[DEBUG] Method docker_getUserInputs Caller:4955 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_getUserInputs Caller:4853 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_createInstallerYaml Caller:3627 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_setSystemValue Caller:2764 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_setSystemValue Caller:2765 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_setSystemValue Caller:2766 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_hook_setInstallerDefaults Caller:2771 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_setSystemValue Caller:4791 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_hook_setInstallerDefaults
+
+[DEBUG] Method wrapper_hook_start_getUserInputs Caller:3630 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_askUser Caller:4801 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+Installation Directory (Default: /home/labuser/.jfrog/distribution): 
+[DEBUG] Setting installer.data_dir with /root/.jfrog/distribution in /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml
+
+[DEBUG] Method docker_getSystemValue Caller:4803 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.data_dir]
+
+[DEBUG] Method: wrapper_hook_start_getUserInputs. JF_ROOT_DATA_DIR is now [/root/.jfrog/distribution]
+
+[DEBUG] Validating system.yaml
+
+[DEBUG] Skipping system.yaml validation since system.yaml file [/root/.jfrog/distribution/var/etc/system.yaml] was not found
+
+Running system diagnostics checks, logs can be found at [/home/labuser/m1050961/jfrog-distribution-2.10.3-compose/systemDiagnostics.log]
+[ERROR] Router external port (8082) is being used by another process
+[ERROR] Ulimit level for open files is less than the recommended minimum 32000
+
+[1;31m[WARN[0m[1;31m] [0mOne or more system diagnostic checks have failed, check [/home/labuser/m1050961/jfrog-distribution-2.10.3-compose/systemDiagnostics.log] for additional details
+
+[DEBUG] Method docker_triggerMigration Caller:4823 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+Triggering migration script. This will migrate if needed and may take some time.
+
+Migration logs will be available at [/home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/migration.log]. The file will be archived at [/root/.jfrog/distribution/var/log] after installation
+
+[DEBUG] Method docker_postMigration_hook
+
+[DEBUG] Method _askForMandatoryInputs Caller:3632 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method getJFrogURLIfAvailable Caller:3099 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] JFrog URL not found
+
+[DEBUG] Method wrapper_askUser Caller:3103 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+The JFrog URL allows Distribution to connect to a JFrog Platform Instance.
+(You can copy the JFrog URL from Admin > Security > Settings)
+JFrog URL: 
+[DEBUG] Setting shared.jfrogUrl with http://localhost:8082 in /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml
+[WARN ] Error while initializing File resolver : Config file does not exists : var/etc/system.yaml
+Attempt to connect JFrogURL succeeded
+
+[DEBUG] Method _getJoinKeyIfAvailable Caller:3108 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_askUser Caller:3112 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+The Join key is the secret key used to establish trust between services in the JFrog Platform.
+(You can copy the Join Key from Admin > Security > Settings)
+Join Key: 
+
+[DEBUG] The input failed validations [^[a-zA-Z0-9]{16,}$]
+
+[1;31m[WARN[0m[1;31m] [0mInvalid Join Key
+Join Key: 
+
+
+[DEBUG] Setting shared.security.joinKey with __sensitive_key_hidden___ in /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml
+
+[DEBUG] Method _getHostIpIfAvailable Caller:3634 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_askUser Caller:3638 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+For IPv6 address, enclose value within square brackets as follows : [<ipv6_address>]
+Please specify the IP address of this machine (Default: 10.0.0.4): 
+[DEBUG] Setting installer.node.ip with 10.0.0.4 in /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml
+
+[DEBUG] Method _updateFromSystemYaml Caller:3645 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method _getHAModeIfAvailable Caller:3647 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_askUser Caller:3648 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+Are you adding an additional node to an existing product cluster? [y/N]: 
+[DEBUG] Setting installer.ha with n in /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml
+
+[DEBUG] Method wrapper_standalone_hook_getUserInputs (unimplemented)
+
+[DEBUG] Method _askForDBInputs Caller:3677 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method _getDatabaseType Caller:3545 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method _askPostgresDetails Caller:3553 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_askUser Caller:3301 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+The installer can install a PostgreSQL database, or you can connect to an existing compatible PostgreSQL database
+(https://service.jfrog.org/installer/System+Requirements#SystemRequirements-RequirementsMatrix)
+If you are upgrading from an existing installation, select N if you have externalized PostgreSQL, select Y if not.
+Do you want to install PostgreSQL? [Y/n]: 
+[DEBUG] Setting installer.install_postgresql with y in /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml
+
+[DEBUG] Setting shared.database.type with postgresql in /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml
+
+[DEBUG] Setting shared.database.driver with org.postgresql.Driver in /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml
+
+[DEBUG] Method _updateFromSystemYaml Caller:2868 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_askUser Caller:2870 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+To setup PostgreSQL, please enter a password
+database password: 
+
+[DEBUG] The input failed validations [^[a-zA-Z0-9]+$]
+
+[1;31m[WARN[0m[1;31m] [0mPlease enter valid PostgreSQL password
+database password: 
+
+
+[DEBUG] Setting shared.database.password with __sensitive_key_hidden___ in /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml
+confirm database password: 
+
+[DEBUG] Method wrapper_setSystemValue Caller:2862 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Setting shared.database.password with __sensitive_key_hidden___ in /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml
+
+[DEBUG] Method wrapper_hook_askExtraPostgresDetails (unimplemented)
+
+[DEBUG] Method wrapper_hook_getUserInputs (unimplemented)
+
+[DEBUG] Method copyRedisConfigurationFile
+
+[DEBUG] Method _updateFromSystemYaml Caller:3371 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_setSystemValue Caller:3374 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Setting shared.redis.password with __sensitive_key_hidden___ in /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml
+
+[DEBUG] Replaced [requirepass.*] with [requirepass 38776a63eefbd172] in [/root/.jfrog/distribution/app/third-party/redis/redis.conf]
+
+[DEBUG] Method docker_getSystemValue Caller:4857 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.data_dir]
+
+[DEBUG] Method: docker_getUserInputs. JF_ROOT_DATA_DIR is now [/root/.jfrog/distribution]
+
+[DEBUG] Method docker_getSystemValue Caller:4864 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.ha]
+
+[DEBUG] Method: docker_getUserInputs. JF_NODE_TYPE is now [standalone]
+
+[DEBUG] Method docker_getSystemValue Caller:4874 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.jfrogUrl]
+
+[DEBUG] Method: docker_getUserInputs. JF_SHARED_JFROGURL is now [http://localhost:8082]
+
+[DEBUG] Method docker_getSystemValue Caller:4878 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.security.joinKey]
+
+[DEBUG] Method: docker_getUserInputs. JF_SHARED_SECURITY_JOINKEY is now [cbfafdc4bcbcb8e4abcebd5e36bd6e48]
+
+[DEBUG] Method docker_getSystemValue Caller:4882 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.install_postgresql]
+
+[DEBUG] Method: docker_getUserInputs. IS_POSTGRES_REQUIRED is now [y]
+
+[DEBUG] Method docker_getSystemValue Caller:4886 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.node.ip]
+
+[DEBUG] Method: docker_getUserInputs. JF_SHARED_NODE_IP is now [10.0.0.4]
+
+[DEBUG] Method docker_hook_getUserInputs_post
+
+[DEBUG] No third party integration configured. Skipping invocation of 3rd party hook
+
+[DEBUG] Method docker_updateFromYaml Caller:4960 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4018 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.install_elasticsearch]
+
+[DEBUG] Method docker_setupModeSpecificVar. IS_ELASTICSEARCH_REQUIRED is now []
+
+[DEBUG] PROJECT_ROOT_FOLDER is [distribution]
+
+[DEBUG] Method docker_setDirInfo Caller:4967 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Root Directory being used is: /root/.jfrog/distribution
+
+[DEBUG] Method docker_hook_setDirInfo
+
+[DEBUG] Method docker_createDirectories Caller:4971 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/distribution/var]
+
+[DEBUG] Attempting to create /root/.jfrog/distribution/var
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1020:1020 /root/.jfrog/distribution/var]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/distribution/var/etc]
+
+[DEBUG] Attempting to create /root/.jfrog/distribution/var/etc
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1020:1020 /root/.jfrog/distribution/var/etc]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/distribution/var/data]
+
+[DEBUG] Attempting to create /root/.jfrog/distribution/var/data
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1020:1020 /root/.jfrog/distribution/var/data]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/distribution/var/log]
+
+[DEBUG] Attempting to create /root/.jfrog/distribution/var/log
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1020:1020 /root/.jfrog/distribution/var/log]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/distribution/var/etc/security]
+
+[DEBUG] Attempting to create /root/.jfrog/distribution/var/etc/security
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1020:1020 /root/.jfrog/distribution/var/etc/security]
+
+[DEBUG] Method docker_hook_createDirectories
+
+[DEBUG] Value of [FIRST_SETUP] is []
+
+[DEBUG] Method docker_setRootDirPermissions Caller:4975 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1020:1020 /root/.jfrog/distribution]
+
+[DEBUG] Method docker_createThirdPartyDir Caller:4979 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+Creating third party directories (if necessary)
+
+[DEBUG] Method io_createPostgresDir Caller:4294 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Property [/root/.jfrog/distribution/var/data/postgres] exists. Proceeding
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/distribution/var/data/postgres/data]
+
+[DEBUG] Attempting to create /root/.jfrog/distribution/var/data/postgres/data
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 999:999 /root/.jfrog/distribution/var/data/postgres]
+
+[DEBUG] Method io_createNginxDir Caller:4295 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method io_createElasticSearchDir Caller:4296 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method io_createRedisDir Caller:4297 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Property [/root/.jfrog/distribution/var/data/redis] exists. Proceeding
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/distribution/var/data/redis]
+
+[DEBUG] Attempting to create /root/.jfrog/distribution/var/data/redis
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 999:999 /root/.jfrog/distribution/var/data/redis]
+
+[DEBUG] Method io_createMongoDir Caller:4298 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method io_createRabbitMQDir Caller:4299 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method _updateFromSystemYaml Caller:3332 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_setSystemValue Caller:3354 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Setting installer.postgresql_version with 13-2v in /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml
+
+[DEBUG] Method docker_createSystemYaml Caller:4985 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.node.ip] to [/root/.jfrog/distribution/var/etc/system.yaml]
+
+[DEBUG] Setting shared.node.ip with 10.0.0.4 in /root/.jfrog/distribution/var/etc/system.yaml
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.node.id] to [/root/.jfrog/distribution/var/etc/system.yaml]
+
+[DEBUG] Setting shared.node.id with ubu in /root/.jfrog/distribution/var/etc/system.yaml
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.node.name] to [/root/.jfrog/distribution/var/etc/system.yaml]
+
+[DEBUG] Setting shared.node.name with ubu in /root/.jfrog/distribution/var/etc/system.yaml
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.jfrogUrl] to [/root/.jfrog/distribution/var/etc/system.yaml]
+
+[DEBUG] Setting shared.jfrogUrl with http://localhost:8082 in /root/.jfrog/distribution/var/etc/system.yaml
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.security.joinKey] to [/root/.jfrog/distribution/var/etc/system.yaml]
+
+[DEBUG] Setting shared.security.joinKey with __sensitive_key_hidden___ in /root/.jfrog/distribution/var/etc/system.yaml
+
+[DEBUG] Method docker_setSystemValue. Setting [router.entrypoints.externalPort] to [/root/.jfrog/distribution/var/etc/system.yaml]
+
+[DEBUG] Setting router.entrypoints.externalPort with 8082 in /root/.jfrog/distribution/var/etc/system.yaml
+
+[DEBUG] Method docker_installToSystemYaml Caller:4475 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4434 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.database.type]
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.database.type] to [/root/.jfrog/distribution/var/etc/system.yaml]
+
+[DEBUG] Setting shared.database.type with postgresql in /root/.jfrog/distribution/var/etc/system.yaml
+
+[DEBUG] Method docker_installToSystemYaml Caller:4476 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4434 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.database.driver]
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.database.driver] to [/root/.jfrog/distribution/var/etc/system.yaml]
+
+[DEBUG] Setting shared.database.driver with org.postgresql.Driver in /root/.jfrog/distribution/var/etc/system.yaml
+
+[DEBUG] Method docker_installToSystemYaml Caller:4477 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4434 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.database.url]
+
+[DEBUG] Key: KEY_DATABASE_URL not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4478 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4434 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.database.username]
+
+[DEBUG] Key: KEY_DATABASE_USERNAME not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4479 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4434 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.database.password]
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.database.password] to [/root/.jfrog/distribution/var/etc/system.yaml]
+
+[DEBUG] Setting shared.database.password with __sensitive_key_hidden___ in /root/.jfrog/distribution/var/etc/system.yaml
+
+[DEBUG] Method docker_installToSystemYaml Caller:4480 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4434 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.elasticsearch.username]
+
+[DEBUG] Key: KEY_ELASTICSEARCH_PASSWORD not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4481 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4434 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.elasticsearch.password]
+
+[DEBUG] Key: KEY_ELASTICSEARCH_PASSWORD not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4482 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4434 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.rabbitMq.active.node.name]
+
+[DEBUG] Key: KEY_RABBITMQ_ACTIVE_NODE_NAME not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4483 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4434 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.rabbitMq.active.node.ip]
+
+[DEBUG] Key: KEY_RABBITMQ_ACTIVE_NODE_IP not applicable
+
+[DEBUG] Method docker_installToSystemYaml Caller:4484 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4434 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.redis.password]
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.redis.password] to [/root/.jfrog/distribution/var/etc/system.yaml]
+
+[DEBUG] Setting shared.redis.password with __sensitive_key_hidden___ in /root/.jfrog/distribution/var/etc/system.yaml
+
+[DEBUG] Method docker_installToSystemYaml Caller:4485 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4434 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.rabbitMq.password]
+
+[DEBUG] Key: KEY_RABBITMQ_PASSWORD not applicable
+
+[DEBUG] Method docker_getSystemValue Caller:4487 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.security.masterKey]
+
+[DEBUG] Method docker_addToEnvFile Caller:4495 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Replacing [ROOT_DATA_DIR] in /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/.env
+
+[DEBUG] Replaced [ROOT_DATA_DIR=.*] with [ROOT_DATA_DIR=/root/.jfrog/distribution] in [/home/labuser/m1050961/jfrog-distribution-2.10.3-compose/.env]
+
+[DEBUG] Method docker_hook_postSystemYamlCreation
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.node.contextUrl] to [/root/.jfrog/distribution/var/etc/system.yaml]
+
+[DEBUG] Setting shared.node.contextUrl with http://10.0.0.4:8080 in /root/.jfrog/distribution/var/etc/system.yaml
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.redis.connectionString] to [/root/.jfrog/distribution/var/etc/system.yaml]
+
+[DEBUG] Setting shared.redis.connectionString with redis://10.0.0.4:6379 in /root/.jfrog/distribution/var/etc/system.yaml
+
+[DEBUG] Method docker_setSystemValue. Setting [shared.database.url] to [/root/.jfrog/distribution/var/etc/system.yaml]
+
+[DEBUG] Setting shared.database.url with __sensitive_key_hidden___ in /root/.jfrog/distribution/var/etc/system.yaml
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1020:1020 /root/.jfrog/distribution/var/etc/system.yaml]
+
+[DEBUG] Method docker_installToSystemYaml Caller:4508 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4434 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.ha]
+
+[DEBUG] Method docker_setSystemValue. Setting [installer.ha] to [/root/.jfrog/distribution/var/etc/installerState.yaml]
+
+[DEBUG] Setting installer.ha with n in /root/.jfrog/distribution/var/etc/installerState.yaml
+
+[DEBUG] Method docker_installToSystemYaml Caller:4508 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4434 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.install_postgresql]
+
+[DEBUG] Method docker_setSystemValue. Setting [installer.install_postgresql] to [/root/.jfrog/distribution/var/etc/installerState.yaml]
+
+[DEBUG] Setting installer.install_postgresql with y in /root/.jfrog/distribution/var/etc/installerState.yaml
+
+[DEBUG] Method docker_installToSystemYaml Caller:4508 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4434 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.postgresql_version]
+
+[DEBUG] Method docker_setSystemValue. Setting [installer.postgresql_version] to [/root/.jfrog/distribution/var/etc/installerState.yaml]
+
+[DEBUG] Setting installer.postgresql_version with 13-2v in /root/.jfrog/distribution/var/etc/installerState.yaml
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1020:1020 /root/.jfrog/distribution/var/etc/installerState.yaml]
+
+[DEBUG] Method docker_hook_copyComposeFile
+
+[DEBUG] Method docker_getSystemValue Caller:4521 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[installer.postgresql_version]
+
+[DEBUG] Method _getDatabaseType Caller:4554 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue Caller:4560 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.database.password]
+
+Attempting to seed PostgreSQL. This may take some time.
+Creating network "distribution-postgres_default" with the default driver
+Pulling postgres (releases-docker.jfrog.io/postgres:13.2-alpine)...
+13.2-alpine: Pulling from postgres
+Digest: sha256:630d7359c7b33a73959430fcfa1e3119aba3649d82f59d78eb363573545d0644
+Status: Downloaded newer image for releases-docker.jfrog.io/postgres:13.2-alpine
+Creating distribution_postgres ... 
+[1A[2KCreating distribution_postgres ... [32mdone[0m[1B
+Successfully seeded PostgreSQL
+
+[DEBUG] Copying [/home/labuser/m1050961/jfrog-distribution-2.10.3-compose/templates/docker-compose.yaml] as [/home/labuser/m1050961/jfrog-distribution-2.10.3-compose/docker-compose.yaml]
+
+[DEBUG] Copying [/home/labuser/m1050961/jfrog-distribution-2.10.3-compose/templates/docker-compose-redis.yaml] as [/home/labuser/m1050961/jfrog-distribution-2.10.3-compose/docker-compose-redis.yaml]
+
+[DEBUG] Method docker_hook_setupThirdParty
+
+[DEBUG] No third party integration configured. Skipping invocation of 3rd party hook
+
+[DEBUG] Method docker_configureLogRotation Caller:5000 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method _addLogRotateBinary Caller:4778 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method configureLogRotation Caller:4779 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Configuring log rotation as user [1020], group [1020], effective cron User [root]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/distribution]
+
+[DEBUG] Attempting to create /root/.jfrog/distribution
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1020:1020 /root/.jfrog/distribution]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/distribution/var]
+
+[DEBUG] Attempting to create /root/.jfrog/distribution/var
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1020:1020 /root/.jfrog/distribution/var]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/distribution/var/log]
+
+[DEBUG] Attempting to create /root/.jfrog/distribution/var/log
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1020:1020 /root/.jfrog/distribution/var/log]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/distribution/var/log/archived]
+
+[DEBUG] Attempting to create /root/.jfrog/distribution/var/log/archived
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1020:1020 /root/.jfrog/distribution/var/log/archived]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/distribution/var/etc]
+
+[DEBUG] Attempting to create /root/.jfrog/distribution/var/etc
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1020:1020 /root/.jfrog/distribution/var/etc]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/distribution/var/etc/logrotate]
+
+[DEBUG] Attempting to create /root/.jfrog/distribution/var/etc/logrotate
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1020:1020 /root/.jfrog/distribution/var/etc/logrotate]
+
+[DEBUG] Method createFile [/root/.jfrog/distribution/var/etc/logrotate/logrotate.conf]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1020:1020 /root/.jfrog/distribution/var/etc/logrotate/logrotate.conf]
+
+[DEBUG] Method _addLogRotateConfiguration Caller:1144 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Adding logrotate configuration for [/root/.jfrog/distribution/var/log/console.log] to [/root/.jfrog/distribution/var/etc/logrotate/logrotate.conf]
+
+[DEBUG] Method _addCronJobForLogrotate Caller:1145 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method removeLogRotation Caller:1067 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] No third party integration configured. Skipping invocation of 3rd party hook
+
+[DEBUG] Method docker_showSuccessMessage Caller:5006 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[1mDocker setup complete[0m
+
+Installation directory: [/root/.jfrog/distribution] contains data and configurations.
+
+Use docker-compose commands to start the application. Once the application has started, it can be accessed at [http://localhost:8082]
+
+[1mExamples:[0m
+cd /home/labuser/m1050961/jfrog-distribution-2.10.3-compose
+
+start redis:         docker-compose -p distribution-redis -f docker-compose-redis.yaml up -d
+start postgresql:    docker-compose -p distribution-postgres -f docker-compose-postgres.yaml up -d
+start:               docker-compose -p distribution up -d
+stop:                docker-compose -p distribution down
+
+[1mNOTE:[0m The compose file uses several environment variables from the .env file. Remember to run from within the [/home/labuser/m1050961/jfrog-distribution-2.10.3-compose] folder
+
+[DEBUG] Method docker_cleanup Caller:5010 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_removeInstallerYaml Caller:4607 /home/labuser/m1050961/jfrog-distribution-2.10.3-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Removing file: [/home/labuser/m1050961/jfrog-distribution-2.10.3-compose/installer.yaml]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1020:1020 /root/.jfrog/distribution/var/log/config.log]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1020:1020 /root/.jfrog/distribution/var/log/migration.log]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1020:1020 /root/.jfrog/distribution/var/etc/system.basic-template.yaml]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1020:1020 /root/.jfrog/distribution/var/etc/system.full-template.yaml]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1020:1020 /root/.jfrog/distribution/var/log/systemDiagnostics.log]
+
+[1mDone[0m
+

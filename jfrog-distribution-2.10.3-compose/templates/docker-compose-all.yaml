@@ -1,0 +1,67 @@
+version: '3'
+services:
+  router:
+    image: "${DOCKER_REGISTRY}/jfrog/router:${DOCKER_VERSION_ROUTER}"
+    container_name: distribution_router
+    user: "${DISTRIBUTION_USER}:${DISTRIBUTION_USER}"
+    environment:
+      - JF_ROUTER_TOPOLOGY_LOCAL_REQUIREDSERVICETYPES=jfds
+      - JF_ROUTER_ENTRYPOINTS_EXTERNALPORT=${JF_ROUTER_ENTRYPOINTS_EXTERNALPORT}
+    ports:
+      - ${JF_ROUTER_ENTRYPOINTS_EXTERNALPORT}:${JF_ROUTER_ENTRYPOINTS_EXTERNALPORT} # for router communication
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ${ROOT_DATA_DIR}/var:/var/opt/jfrog/router
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "10"
+  distribution:
+    image: "${DOCKER_REGISTRY}/jfrog/distribution-distribution:${DISTRIBUTION_VERSION}"
+    container_name: distribution_distribution
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ${ROOT_DATA_DIR}/var:/var/opt/jfrog/distribution
+    network_mode: service:router
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "10"
+    restart: always
+  redis:
+    image: "${DOCKER_REGISTRY}/redis:6.0.5-alpine"
+    container_name: distribution_redis
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ${ROOT_DATA_DIR}/var/data/redis:/data
+      - ${ROOT_DATA_DIR}/app/third-party/redis/redis.conf:/usr/local/etc/redis/redis.conf
+    command: redis-server /usr/local/etc/redis/redis.conf --appendonly yes
+    ports:
+      - 6379:6379
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "10"
+    restart: always
+  postgres:
+    image: "${DOCKER_REGISTRY}/postgres:13.2-alpine"
+    container_name: distribution_postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=distribution
+      - POSTGRES_USER=distribution
+      - POSTGRES_PASSWORD=__REPLACE_POSTGRES_PASSWORD__
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ${ROOT_DATA_DIR}/var/data/postgres/data:/var/lib/postgresql/data
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "10"

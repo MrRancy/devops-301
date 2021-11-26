@@ -1,0 +1,39 @@
+
+************** Start Distribution Diagnostics *******************
+
+
+[WARN ] Error while initializing File resolver : Config file does not exists : /root/.jfrog/distribution/var/etc/system.yaml
+[ERROR] 8082 (NOT AVAILABLE) used by processName docker-pr processId 24846
+[ERROR] port 8082 is not bindable
+[ERROR] Router external port (8082) is being used by another process
+[INFO ] Router internal port (8046) is open
+[INFO ] Router traefik port (8049) is open
+[INFO ] Router grpc port (8047) is open
+[INFO ] Distribution port (8080) is open
+[INFO ] Ulimit level for processes is satisfactory--no change required
+ulimit value(1024) is below expected value(32000)
+[ERROR] Ulimit level for open files is less than the recommended minimum 32000
+[INFO ] Router external port (8082) not blocked by firewall
+[INFO ] Router internal port (8046) not blocked by firewall
+[INFO ] Router grpc port (8047) not blocked by firewall
+[INFO ] Router traefik port (8049) not blocked by firewall
+[INFO ] Distribution port (8080) not blocked by firewall
+[INFO ] Router external port (8082) not blocked by iptables
+[INFO ] Router internal port (8046) not blocked by iptables
+[INFO ] Router grpc port (8047) not blocked by iptables
+[INFO ] Router traefik port (8049) not blocked by iptables
+[INFO ] Distribution port (8080) not blocked by iptables
+[INFO ] Router external port (8082) not blocked by ip6tables
+[INFO ] Router internal port (8046) not blocked by ip6tables
+[INFO ] Router grpc port (8047) not blocked by ip6tables
+[INFO ] Router traefik port (8049) not blocked by ip6tables
+[INFO ] Distribution port (8080) is not blocked by ip6tables
+[INFO ] Ping to localhost successful
+[INFO ] Environment variable HTTP_PROXY is not set
+[INFO ] Environment variable HTTPS_PROXY is not set
+[INFO ] Environment variable NO_PROXY is not set
+[INFO ] Environment variable ALL_PROXY is not set
+
+
+************** END Distribution Diagnostics *******************
+

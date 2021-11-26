@@ -1,0 +1,89 @@
+migration:
+  product: DISTRIBUTION
+  # convert yaml Files to matching keys in system.yaml  
+  yaml:
+    files: 
+      distributionConfigYaml
+      distributorConfigYaml
+    distributionConfigYaml:
+      # Note $JF_ROOT_DATA_DIR/var will be prepended to the filePath value
+      filePath: etc/distribution/old
+      fileName: distribution.local.config.yml
+      # map should be in format example: systemYamlPath=key in config file
+      map:
+        server.internalUrl=server.internal-url
+        server.port=server.port
+        server.joinKey=server.join-key
+        shared.redis.connectionString=redis.connection-string
+        shared.redis.stagingDatabaseIndex=redis.staging-database-index
+        shared.redis.socketTimeoutMillis=redis.socket-timeout-millis
+        shared.redis.resourcePoolMaxSize=redis.resource-pool-max-size
+        shared.redis.resourcePoolMaxWaitMillis=redis.resource-pool-max-wait-millis
+        mongo.connectionString=mongo.connection-string
+        shared.database.url=sql.connection-string
+        shared.database.autoCommit=sql.auto-commit
+        shared.database.maxActiveConnections=sql.max-active-connections
+        shared.database.maxLifetimeMillis=sql.max-lifetime-millis       
+        shared.database.minIdleConnections=sql.min-idle-connections             
+        shared.database.idleTimeoutMillis=sql.idle-timeout-millis          
+        shared.database.connectionTimeoutMillis=sql.connection-timeout-millis
+        shared.database.connectionInitQuery=sql.connection-init-query              
+        shared.database.connectionTestQuery=sql.connection-test-query              
+        shared.database.connectionTestTimeoutMillis=sql.connection-test-timeout-millis
+        shared.database.leakDetectionThresholdMillis=sql.leak-detection-threshold-millis 
+        shared.database.allowPoolSuspension=sql.allow-pool-suspension        
+        shared.database.catalog=sql.catalog                            
+        shared.database.initializationFailTimeoutMillis=sql.initialization-fail-timeout-millis
+        shared.database.isolateInternalQueries=sql.isolate-internal-queries     
+    distributorConfigYaml:
+      # Note $JF_ROOT_DATA_DIR/var will be prepended to the filePath value
+      filePath: etc/distributor/old
+      fileName: distributor.local.config.yml
+      # map should be in format example: systemYamlPath=key in config file
+      map: 
+        distribution.internalApiUrl=distribution.internal-api-url
+        shared.redis.connectionString=redis.connection-string
+        shared.redis.stagingDatabaseIndex=redis.staging-database-index
+        shared.redis.pendingDatabaseIndex=redis.pending-database-index
+        shared.redis.workingDatabaseIndex=redis.working-database-index
+        shared.redis.socketTimeoutMillis=redis.socket-timeout-millis
+        shared.redis.resourcePoolMaxSize=redis.resource-pool-max-size
+        shared.redis.resourcePoolMaxWaitMillis=redis.resource-pool-max-wait-millis
+        foreman.executorFactor=foreman.executor-factor
+        foreman.executorQueueFactor=foreman.executor-queue-size
+        foreman.snoozeTimeMillis=foreman.snooze-time-in-millis
+        foreman.quietPeriodSecs=foreman.quiet-period-in-secs
+        foreman.inactivityThresholdSecs=foreman.inactivity-time
+        foreman.taskExecutionRetriesWarningThreshold=formen.task-execution-retries-warning-threshold
+        foreman.maxTaskExecutionRetries=foreman.max-task-execution-retries
+        foreman.recoveryBatchSize=foreman.recovery-batch-size
+        foreman.taskReviverCycleMillis=foreman.task-reviver-time-in-millis
+  moveDirectories:
+    map:
+    # Note $JF_ROOT_DATA_DIR will be prepended to the sourceDirectoryPath value and $JF_ROOT_DATA_DIR/var will be prepended to the targetDirectoryPath value
+    # map should be in format example: targetDirectoryPath=sourceDirectoryPath 
+      etc/distribution=distribution/etc
+      etc/distribution/access=distribution/access
+      etc/distributor=distributor/etc
+      data/postgres/data=postgres
+      data/redis=redis
+      log/archived/distribution=distribution/logs
+      log/archived/distributor=distributor/logs
+  copySpecificFiles:
+    map:
+    # Note : $JF_ROOT_DATA_DIR will be prepended to the sourceDirectoryPath value only if relative path and $JF_ROOT_DATA_DIR will be prepended to the targetDirectoryPath value
+    # map should be in format example: targetDirectoryPath=sourceDirectoryPath
+      var/etc/security=distribution/.platform/master.key
+      var/data/distribution=distribution/data/server.name
+      var/distributor/etc=distributor/var/bintray.build.properties
+  updateSystemYaml:
+    map:
+    # map should be in format example: systemYamlPath=value in config file
+      shared.database.driver=org.postgresql.Driver
+      shared.database.type=postgresql
+  cleanUpOldDataDir:
+    # Note $JF_ROOT_DATA_DIR will be prepended to the map entry
+    map:
+      distribution
+      distribution-installer
+      distributor

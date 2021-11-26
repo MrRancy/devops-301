@@ -25,6 +25,25 @@ node {
 	stage('Docker-Compose Build'){
             sh 'docker-compose up -d'
         } 
-
+	stage('Build Management') {
+		def uploadSpec = """{ 
+			"files": [
+			{
+			"pattern": "**/*.war",
+			"target": "petclinic-repo"
+			}
+			]
+		}"""
+		server.upload spec: uploadSpec
+	}
+	stage('Publish Build Info'){
+   		server.publishBuildInfo buildInfo
+	}
+	stage('Archive Artifact') {
+		archiveArtifacts artifacts: 'target/petclinic.war', followSymlinks: false
+	}
+	stage('Docker Deployment') {
+		sh 'docker-compose up -d --build'
+	}
    }
 }

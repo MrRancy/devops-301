@@ -1,0 +1,20 @@
+version: '3'
+services:
+  postgres:
+    image: "${DOCKER_REGISTRY}/postgres:13.2-alpine"
+    container_name: distribution_postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=distribution
+      - POSTGRES_USER=distribution
+      - POSTGRES_PASSWORD=__REPLACE_POSTGRES_PASSWORD__
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ${ROOT_DATA_DIR}/var/data/postgres/data:/var/lib/postgresql/data
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "10"

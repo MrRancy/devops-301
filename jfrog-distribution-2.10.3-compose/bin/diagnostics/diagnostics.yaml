@@ -1,0 +1,224 @@
+---
+task:
+  mode: serial
+  commands:
+    -
+      command: system
+      args:
+        - portbind
+        - "{{router.entrypoints.externalPort:8082}}"
+      message:
+        failure: "Router external port ({{router.entrypoints.externalPort:8082}}) is being used by another process"
+        success: "Router external port ({{router.entrypoints.externalPort:8082}}) is open"
+    - 
+      command: system
+      args:
+        - portbind
+        - "{{router.entrypoints.internalPort:8046}}"
+      message:
+        failure: "Router internal port ({{router.entrypoints.internalPort:8046}}) is being used by another process"
+        success: "Router internal port ({{router.entrypoints.internalPort:8046}}) is open"
+    - 
+      command: system
+      args:
+        - portbind
+        - "{{router.entrypoints.traefikApiPort:8049}}"
+      message:
+        failure: "Router traefik port ({{router.entrypoints.traefikApiPort:8049}}) is being used by another process"
+        success: "Router traefik port ({{router.entrypoints.traefikApiPort:8049}}) is open"
+    - 
+      command: system
+      args:
+        - portbind
+        - "{{router.entrypoints.grpcPort:8047}}"
+      message:
+        failure: "Router grpc port ({{router.entrypoints.grpcPort:8047}}) is being used by another process"
+        success: "Router grpc port ({{router.entrypoints.grpcPort:8047}}) is open"
+    - 
+      command: system
+      args:
+        - portbind
+        - "{{distribution.port:8080}}"
+      message:
+        failure: "Distribution port ({{distribution.port:8080}}) is being used by another process"
+        success: "Distribution port ({{distribution.port:8080}}) is open"
+    - 
+      command: system
+      args:
+        - ulimit
+        - "1024"
+      flag:
+        process: true
+      message:
+        failure: "Ulimit level for processes is less than the recommended minimum 1024"
+        success: "Ulimit level for processes is satisfactory--no change required"
+    -
+      command: system
+      args:
+        - ulimit
+        - "32000"
+      flag:
+        file-descriptor: true
+      message:
+        failure: "Ulimit level for open files is less than the recommended minimum 32000"
+        success: "Ulimit level for open files is satisfactory--no change required"
+    -
+      command: system
+      args:
+        - firewallport
+        - "{{router.entrypoints.externalPort:8082}}"
+      message:
+        failure: "Router external port ({{router.entrypoints.externalPort:8082}}) is blocked by firewall"
+        success: "Router external port ({{router.entrypoints.externalPort:8082}}) not blocked by firewall"
+    - 
+      command: system
+      args:
+        - firewallport
+        - "{{router.entrypoints.internalPort:8046}}"
+      message:
+        failure: "Router internal port ({{router.entrypoints.internalPort:8046}}) is blocked by firewall"
+        success: "Router internal port ({{router.entrypoints.internalPort:8046}}) not blocked by firewall"
+    - 
+      command: system
+      args:
+        - firewallport
+        - "{{router.entrypoints.grpcPort:8047}}"
+      message:
+        failure: "Router grpc port ({{router.entrypoints.grpcPort:8047}}) is blocked by firewall"
+        success: "Router grpc port ({{router.entrypoints.grpcPort:8047}}) not blocked by firewall"
+    - 
+      command: system
+      args:
+        - firewallport
+        - "{{router.entrypoints.traefikApiPort:8049}}"
+      message:
+        failure: "Router traefik port ({{router.entrypoints.traefikApiPort:8049}}) is blocked by firewall"
+        success: "Router traefik port ({{router.entrypoints.traefikApiPort:8049}}) not blocked by firewall"
+    - 
+      command: system
+      args:
+        - firewallport
+        - "{{distribution.port:8080}}"
+      message:
+        failure: "Distribution port ({{distribution.port:8080}}) is blocked by firewall"
+        success: "Distribution port ({{distribution.port:8080}}) not blocked by firewall"
+    -
+      command: system
+      args:
+        - firewalliptables
+        - "{{router.entrypoints.externalPort:8082}}"
+      message:
+        failure: "Router external port ({{router.entrypoints.externalPort:8082}}) is blocked by iptables"
+        success: "Router external port ({{router.entrypoints.externalPort:8082}}) not blocked by iptables"
+    - 
+      command: system
+      args:
+        - firewalliptables
+        - "{{router.entrypoints.internalPort:8046}}"
+      message:
+        failure: "Router internal port ({{router.entrypoints.internalPort:8046}}) is blocked by iptables"
+        success: "Router internal port ({{router.entrypoints.internalPort:8046}}) not blocked by iptables"
+    - 
+      command: system
+      args:
+        - firewalliptables
+        - "{{router.entrypoints.grpcPort:8047}}"
+      message:
+        failure: "Router grpc port ({{router.entrypoints.grpcPort:8047}}) is blocked by iptables"
+        success: "Router grpc port ({{router.entrypoints.grpcPort:8047}}) not blocked by iptables"
+    - 
+      command: system
+      args:
+        - firewalliptables
+        - "{{router.entrypoints.traefikApiPort:8049}}"
+      message:
+        failure: "Router traefik port ({{router.entrypoints.traefikApiPort:8049}}) is blocked by iptables"
+        success: "Router traefik port ({{router.entrypoints.traefikApiPort:8049}}) not blocked by iptables"
+    - 
+      command: system
+      args:
+        - firewalliptables
+        - "{{distribution.port:8080}}"
+      message:
+        failure: "Distribution port ({{distribution.port:8080}}) is blocked by iptables"
+        success: "Distribution port ({{distribution.port:8080}}) not blocked by iptables"
+    -
+      command: system
+      args:
+        - firewallip6tables
+        - "{{router.entrypoints.externalPort:8082}}"
+      message:
+        failure: "Router external port ({{router.entrypoints.externalPort:8082}}) is blocked by ip6tables"
+        success: "Router external port ({{router.entrypoints.externalPort:8082}}) not blocked by ip6tables"
+    - 
+      command: system
+      args:
+        - firewallip6tables
+        - "{{router.entrypoints.internalPort:8046}}"
+      message:
+        failure: "Router internal port ({{router.entrypoints.internalPort:8046}}) is blocked by ip6tables"
+        success: "Router internal port ({{router.entrypoints.internalPort:8046}}) not blocked by ip6tables"
+    - 
+      command: system
+      args:
+        - firewallip6tables
+        - "{{router.entrypoints.grpcPort:8047}}"
+      message:
+        failure: "Router grpc port ({{router.entrypoints.grpcPort:8047}}) is blocked by ip6tables"
+        success: "Router grpc port ({{router.entrypoints.grpcPort:8047}}) not blocked by ip6tables"
+    - 
+      command: system
+      args:
+        - firewallip6tables
+        - "{{router.entrypoints.traefikApiPort:8049}}"
+      message:
+        failure: "Router traefik port ({{router.entrypoints.traefikApiPort:8049}}) is blocked by ip6tables"
+        success: "Router traefik port ({{router.entrypoints.traefikApiPort:8049}}) not blocked by ip6tables"
+    - 
+      command: system
+      args:
+        - firewallip6tables
+        - "{{distribution.port:8080}}"
+      message:
+        failure: "Distribution port ({{distribution.port:8080}}) is blocked by ip6tables"
+        success: "Distribution port ({{distribution.port:8080}}) is not blocked by ip6tables"
+    -
+      command: system
+      args:
+        - ping
+        - localhost
+      message:
+        failure: "Ping to localhost failed"
+        success: "Ping to localhost successful"
+    -
+      command: system
+      args:
+        - env
+        - HTTP_PROXY
+      message:
+        success: "Environment variable HTTP_PROXY is not set"
+        failure: "Environment variable HTTP_PROXY is set. Consider removing it"
+    -
+      command: system
+      args:
+        - env
+        - HTTPS_PROXY
+      message:
+        success: "Environment variable HTTPS_PROXY is not set"
+        failure: "Environment variable HTTPS_PROXY is set. Consider removing it"
+    -
+      command: system
+      args:
+        - env
+        - NO_PROXY
+      message:
+        success: "Environment variable NO_PROXY is not set"
+        failure: "Environment variable NO_PROXY is set. Consider removing it"
+    -
+      command: system
+      args:
+        - env
+        - ALL_PROXY
+      message:
+        success: "Environment variable ALL_PROXY is not set"
+        failure: "Environment variable ALL_PROXY is set. Consider removing it"
