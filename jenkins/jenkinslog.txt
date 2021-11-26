@@ -1,0 +1,34 @@
+Running from: /home/labuser/m1050961/jenkins/jenkins.war
+webroot: $user.home/.jenkins
+2021-11-26 03:17:03.472+0000 [id=1]	INFO	org.eclipse.jetty.util.log.Log#initialized: Logging initialized @3477ms to org.eclipse.jetty.util.log.JavaUtilLog
+2021-11-26 03:17:03.939+0000 [id=1]	INFO	winstone.Logger#logInternal: Beginning extraction from war file
+2021-11-26 03:17:04.115+0000 [id=1]	WARNING	o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2021-11-26 03:17:04.237+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: jetty-9.4.43.v20210629; built: 2021-06-30T11:07:22.254Z; git: 526006ecfa3af7f1a27ef3a288e2bef7ea9dd7e8; jvm 1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10
+2021-11-26 03:17:07.915+0000 [id=1]	INFO	o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2021-11-26 03:17:08.488+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: DefaultSessionIdManager workerName=node0
+2021-11-26 03:17:08.488+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: No SessionScavenger set, using defaults
+2021-11-26 03:17:08.490+0000 [id=1]	INFO	o.e.j.server.session.HouseKeeper#startScavenging: node0 Scavenging every 600000ms
+2021-11-26 03:17:11.337+0000 [id=1]	INFO	hudson.WebAppMain#contextInitialized: Jenkins home directory: /root/.jenkins found at: $user.home/.jenkins
+2021-11-26 03:17:12.697+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStart: Started w.@4f4c4b1a{Jenkins v2.303.3,/,file:///root/.jenkins/war/,AVAILABLE}{/root/.jenkins/war}
+2021-11-26 03:17:12.872+0000 [id=1]	INFO	o.e.j.server.AbstractConnector#doStart: Started ServerConnector@458ad742{HTTP/1.1, (http/1.1)}{0.0.0.0:9090}
+2021-11-26 03:17:12.874+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: Started @12880ms
+2021-11-26 03:17:12.875+0000 [id=21]	INFO	winstone.Logger#logInternal: Winstone Servlet Engine running: controlPort=disabled
+2021-11-26 03:17:14.884+0000 [id=27]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2021-11-26 03:17:24.371+0000 [id=26]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2021-11-26 03:17:33.232+0000 [id=27]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2021-11-26 03:17:33.254+0000 [id=26]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2021-11-26 03:17:35.587+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2021-11-26 03:17:35.765+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2021-11-26 03:17:35.767+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2021-11-26 03:17:35.993+0000 [id=26]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2021-11-26 03:17:35.995+0000 [id=27]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2021-11-26 03:17:36.146+0000 [id=43]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Download metadata
+2021-11-26 03:17:36.156+0000 [id=43]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Download metadata. 6 ms
+2021-11-26 03:17:36.452+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2021-11-26 03:17:36.522+0000 [id=20]	INFO	hudson.WebAppMain$3#run: Jenkins is fully up and running
+2021-11-26 03:26:34.547+0000 [id=101]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Periodic background build discarder
+2021-11-26 03:26:34.551+0000 [id=101]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 4 ms
+2021-11-26 04:26:34.547+0000 [id=307]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Periodic background build discarder
+2021-11-26 04:26:34.548+0000 [id=307]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 1 ms
+2021-11-26 05:26:34.547+0000 [id=507]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Periodic background build discarder
+2021-11-26 05:26:34.548+0000 [id=507]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 1 ms
